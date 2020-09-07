@@ -46,7 +46,7 @@ function setup() {
   //localStorage.clear() //uncomment this, start the game, and recomment or delete to reset your progress.
   setup = false;
   hasReset = false;
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth - 10, windowHeight - 10);
   if(!localStorage.getItem("exists")) { //if you have not played before, sets up the neccesary stuff!
     print("restarting")
     restart()
